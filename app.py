@@ -8,7 +8,9 @@ def main():
 	if request.method == 'POST':
 		command = request.form["sample"]
 		command = {'command': command}
+		print(command)
 		return jsonify(command)
+	
 
 if __name__ == "__main__":
 	app.run()
