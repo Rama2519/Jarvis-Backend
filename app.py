@@ -9,10 +9,6 @@ def main():
 		command = requesst.form["sample"]
 		command = {'command': command}
 		return jsonify(command)
-	else:
-		command = "Not complete yet"
-		command = {'command': command}
-		return jsonify(command)
 
 if __name__ == "__main__":
 	app.run()
