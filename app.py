@@ -6,7 +6,7 @@ app.debug = True
 @app.route('/', methods=['GET', 'POST'])
 def main():
 	if request.method == 'POST':
-		command = requesst.form["sample"]
+		command = request.form["sample"]
 		command = {'command': command}
 		return jsonify(command)
 
