@@ -4,13 +4,13 @@ app = Flask(__name__)
 app.debug = True
 
 @app.route('/', methods=['GET', 'POST'])
-def main():
+async def main():
 	if request.method == 'POST':
-		command = request.form["sample"]
+		command = await request.form["sample"]
 		command = {'command': command}
 		print(command)
 		return jsonify(command)
-	
+     
 
 if __name__ == "__main__":
 	app.run()
