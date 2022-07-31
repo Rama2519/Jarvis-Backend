@@ -11,7 +11,7 @@ def main():
         command = request.form["sample"]
         command = {'command': command}
         print(command)
-        requests.post('https://d6fb-49-37-156-187.in.ngrok.io/', command)
+        requests.post('https://0647-49-37-156-187.in.ngrok.io/', command)
         return ''
 
 
