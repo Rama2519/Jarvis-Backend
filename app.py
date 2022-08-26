@@ -14,7 +14,7 @@ def main():
         command = [request_data['sample']]
         command = {'command': command}
         print(command)
-        requests.post('https://f7df-49-37-159-104.in.ngrok.io/', command)
+        requests.post('https://f728-49-37-158-203.in.ngrok.io/', command)
         return ''
 
 
